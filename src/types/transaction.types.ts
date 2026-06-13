@@ -1,0 +1,20 @@
+import type { TransactionType } from "../../generated/prisma/enums.js";
+import type { CategorySummary } from "./category.types.js";
+
+export interface TransactionFilter {
+  userId: string;
+  date?: {
+    gte: Date;
+    lte: Date;
+  };
+
+  type?: TransactionType;
+  categoryId?: string;
+}
+
+export interface TransactionSummary {
+  totalExpenses: number;
+  totalIncome: number;
+  balance: number;
+  expensesByCategory: CategorySummary[];
+}
