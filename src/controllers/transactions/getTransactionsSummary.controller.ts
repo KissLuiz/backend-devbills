@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc.js";
 import type { FastifyReply, FastifyRequest } from "fastify";
-import { TransactionType } from "../../../generated/prisma/client.js";
+import { TransactionType } from "@prisma/client";
 import prisma from "../../config/prisma.js";
 import type { GetTransactionsSummaryQuery } from "../../schema/transaction.schema.js";
 import type { CategorySummary } from "../../types/category.types.js";
