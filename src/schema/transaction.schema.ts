@@ -1,6 +1,6 @@
 import { ObjectId } from "mongodb";
 import { z } from "zod/v3";
-import { TransactionType } from "../../generated/prisma/enums.js";
+import { TransactionType } from "@prisma/client";
 
 const isValidObjectId = (id: string): boolean => ObjectId.isValid(id);
 
