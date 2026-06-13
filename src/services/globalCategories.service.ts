@@ -1,4 +1,4 @@
-import { type Category, TransactionType } from "../../generated/prisma/client.js";
+import { type Category, TransactionType } from "@prisma/client";
 import prisma from "../config/prisma.js";
 
 type GlobalCategoryInput = Pick<Category, "name" | "color" | "type">;

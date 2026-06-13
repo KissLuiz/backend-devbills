@@ -1,4 +1,4 @@
-import type { TransactionType } from "../../generated/prisma/enums.js";
+import type { TransactionType } from "@prisma/client";
 import type { CategorySummary } from "./category.types.js";
 
 export interface TransactionFilter {
